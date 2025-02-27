@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Agency</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            color: #00ff00; /* Bright green text */
+            background-color: #1a1a1a; /* Dark background */
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #0d0d0d; /* Darker for hero section */
+            color: #00ff00; /* Bright green text */
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background-color: #00cc00; /* Green button */
+            color: black;
+            padding: 3px 5px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #009900; /* Darker green on hover */
+        }
+
+        .hero-video {
+            max-width: 70%;
+            margin-top: 20px; /* Added margin for spacing */
+        }
+
+        .hero-video video {
+            width: 100%; /* Make video responsive */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 2%; /* Optional: rounded corners */
+        }
+
+        .section {
+            padding: 50px 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            background-color: #0d0d0d; /* Darker background for sections */
+            text-align: center;
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+            color: #00ff00; /* Bright green for headings */
+        }
+
+        .service-cards, .ai-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card, .ai-card {
+            background-color: #1a1a1a; /* Dark card background */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5); /* Green shadow */
+            width: 250px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover, .ai-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 255, 0, 0.7); /* Stronger shadow on hover */
+        }
+
+        .card h3, .ai-card h3 {
+            margin-bottom: 10px;
+            color: #00ff00; /* Bright green for headings */
+        }
+
+        .owner img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .text-content {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>LEARN AI AND MACHINE LEARNING WITH US.</h1>
+            <p>Join us on a journey through the world of artificial intelligence and machine learning. Our expert team is dedicated to helping you understand and implement technology.</p>
+            <a href="#" class="cta-button">MORE ABOUT US</a>
+        </div>
+        <div class="hero-video">
+            <video controls autoplay muted loop>
+                <source src="vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </header>
+
+    <section class="section services">
+        <h2>Why Choose Us</h2>
+        <div class="text-content">
+            <p>At our agency, we believe in harnessing the power of data to drive innovation. Our team of experts specializes in various fields of AI, ensuring that you receive tailored solutions that meet your unique needs.</p>
+        </div>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Predictive Analytics</h3>
+                <p>Leverage historical data to forecast future trends and make informed decisions.</p>
+            </div>
+            <div class="card">
+                <h3>Natural Language Processing</h3>
+                <p>Enhance customer interactions with intelligent chatbots and sentiment analysis.</p>
+            </div>
+            <div class="card">
+                <h3>Computer Vision</h3>
+                <p>Implement image and video analysis solutions for various applications, from security to healthcare.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section history">
+        <h2>Our History</h2>
+        <div class="text-content">
+            <p>Founded in 2020, our agency has consistently pushed the boundaries of technology and creativity. We started as a small team of enthusiasts and have grown into a leading digital agency, dedicated to providing top-notch AI and machine learning solutions.</p>
+            <p>Our journey has been marked by innovation and a relentless pursuit of excellence, helping businesses transform their operations through AI.</p>
+        </div>
+    </section>
+
+    <section class="section owner">
+        <h2>Our Owner</h2>
+        <img src="img.png" alt="Owner's Photo">
+        <h3>Prashanna Tiwari</h3>
+        <div class="text-content">
+            <p>With over 3 years of experience in the tech industry, Prashanna Tiwari has been the driving force behind our agency's success. His vision and leadership have inspired our team to innovate and excel, fostering a culture of creativity and problem-solving.</p>
+            <p>Prashanna believes in empowering clients through knowledge, ensuring they understand the value of the solutions we provide.</p>
+        </div>
+    </section>
+
+    <section class="section ai-services">
+        <h2>AI and Machine Learning Services We Provide</h2>
+        <div class="text-content">
+            <p>Our comprehensive AI services are designed to meet the diverse needs of our clients. From startups to established enterprises, we offer solutions that drive efficiency and growth.</p>
+        </div>
+        <div class="ai-cards">
+            <div class="ai-card">
+                <h3>Data Analysis and Visualization</h3>
+                <p>Transform raw data into actionable insights with advanced visualization techniques.</p>
+            </div>
+            <div class="ai-card">
+                <h3>Machine Learning Model Development</h3>
+                <p>Build custom machine learning models tailored to your business needs and goals.</p>
+            </div>
+            <div class="ai-card">
+                <h3>AI Consulting</h3>
+                <p>Receive expert advice on AI strategy, implementation, and best practices for your organization.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
